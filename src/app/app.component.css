@@ -1,0 +1,134 @@
+/* General */
+.main {
+    width: 80%;
+    margin: auto;
+    border: 1px solid #1f5a88;
+    border-radius: 10px;
+}
+
+/* Icons */
+.pi {
+    margin-right: 5px;
+}
+
+/* Image */
+.profile-img-container {
+    width: 100%;
+    display: flex;
+}
+.profile-img {
+    border-radius: 50%;
+    max-width: 200px;
+    margin: 50px auto;
+    border: 3px solid gray;
+}
+
+/* Column 1 */
+.column1 {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.column1 h1 {
+    font-weight: 900;
+    color: #1f5a88;
+    margin-bottom: 0;
+}
+.column1 h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1f5a88; 
+    margin-bottom: 0;
+}
+.column1 h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #1f5a88;
+    margin-top: 0;
+}
+.column1 h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 5px;
+}
+.column1 h5 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 5px;
+}
+.personal-info {
+    margin-bottom: 20px;
+}
+.linkedin-github a {
+    color: inherit;
+}
+.linkedin-github i {
+    font-size: 3rem;
+    margin: 10px;
+}
+.linkedin-github img {
+    width: 10%;
+}
+.skills {
+    margin-bottom: 20px;
+}
+.skills h1 {
+    margin-bottom: 15px;
+}
+.skills img {
+    width: 10%;
+    border-radius: 50%;
+    margin: 5px;
+}
+.academic-history a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Colum 2 */
+.column2 {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+.column2 h1 {
+    font-weight: 900;
+    color: #1f5a88;
+    margin-bottom: 0;
+}
+.column2 h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1f5a88; 
+    margin-bottom: 0;
+}
+.column2 h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #1f5a88;
+    margin-top: 0;
+}
+.column2 h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 5px;
+}
+.column2 h5 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 5px;
+}
+.professional-experience li {
+    list-style: none;
+}
+
+/* Disponibility */
+.disponibility {
+    width: 100%;
+    display: flex;
+    margin: 30px 0;
+}
+.disponibility pre {
+    margin: auto;
+    font-size: 2rem;
+}
