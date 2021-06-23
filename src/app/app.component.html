@@ -3,121 +3,317 @@
   <div class="profile-img-container">
 
     <img src="/assets/profile.jpg" alt="" class="profile-img">
+
+    <button
+      (click)="switchLanguage()"
+      class="languageButton"
+    >
+      {{ languageMessage }}
+    </button>
+
   </div>
 
-  <div class="column1">
-
-    <div class="personal-info">
-
-      <h1>Tobias Blaksley</h1>
-      <h3>Desarrollador Full Stack</h3>
-      <h5>Fecha de nacimento: <small>11/05/1990</small></h5>
-      <h5>Argentina, <small>Buenos Aires - Boulogne</small></h5>
-      <h5><i class="pi pi-phone"></i>+54 9 11 6535 3437</h5>
-      <h5><i class="pi pi-envelope"></i>tobias.blaksley@hotmail.com</h5>
-      <h4>Actualmente en: <small>Buenos Aires, Argentina</small></h4>
-
-    </div>
-
-    <div class="linkedin-github">
-
-      <a href="https://github.com/Totoblak90" target="_blank"><i class="pi pi-github" ></i></a>
-      <a href="https://www.linkedin.com/in/tobias-blaksley-5b883753/" target="_blank">
-        <img src="/assets/LI-Logo.png" alt="LINKEDIN">
-      </a>
+  <div [ngSwitch]="lenguage" class="switchLanguage">
+    <div *ngSwitchCase="true">
       
+      <div class="mainInfo">
+        <div class="personal-info">
+          
+          <h1>Tobias Blaksley</h1>
+          <h3>Desarrollador Full Stack</h3>
+          <h5>Fecha de nacimento: <small>11/05/1990</small></h5>
+          <h5>Argentina, <small>Buenos Aires - Boulogne</small></h5>
+          <h5><i class="pi pi-phone"></i>+54 9 11 6535 3437</h5>
+          <h5><i class="pi pi-envelope"></i>tobias.blaksley@hotmail.com</h5>
+          <h4>Actualmente en: <small>Buenos Aires, Argentina</small></h4>
+          
+        </div>
+          
+        <h1 class="profileTitle">Mi perfil online:</h1>
+        <div class="linkedin-github">
+          <a href="https://github.com/Totoblak90" target="_blank"><i class="pi pi-github" ></i></a>
+          <a href="https://www.linkedin.com/in/tobias-blaksley-5b883753/" target="_blank">
+            <img src="/assets/LI-Logo.png" alt="LINKEDIN">
+          </a>
+        </div>
+    
+      </div>
+    
+      <div class="column1">
+    
+        <div class="skills">
+    
+          <h1>Skills</h1>
+          <div class="skillsDiv">
+            <img src="/assets/skills/html.png" alt="HTML">
+            <pre>HTML 5</pre>
+          </div>
+          <div class="skillsDiv">
+            <img src="/assets/skills/css.webp" alt="HTML" id="css">
+            <pre>CSS</pre>
+          </div>
+          <div class="skillsDiv">
+            <img src="/assets/skills/js.png" alt="JS">
+            <pre>JavaScript</pre>
+          </div>
+          <div class="skillsDiv">
+            <img src="/assets/skills/nodejs.png" alt="JS">
+            <pre>NodeJS</pre>
+          </div>
+          <div class="skillsDiv">
+            <img src="/assets/skills/angular.png" alt="ANGULAR">
+            <pre>Angular</pre>
+          </div>
+          <div class="skillsDiv">
+            <img src="/assets/skills/react-logo-vector.svg" alt="REACT">
+            <pre>React</pre>
+          </div>
+          <div class="skillsDiv">
+            <img src="/assets/skills/ionic.png" alt="IONIC">
+            <pre>Ionic</pre>
+          </div>
+          <div class="skillsDiv">
+            <img src="/assets/skills/mysql.png" alt="MY SQL">
+            <pre>MySQL</pre>
+          </div>
+          <div class="skillsDiv">
+            <img src="/assets/skills/github.png" alt="GITHUB">
+            <pre>Github</pre>
+          </div>
+          <div class="skillsDiv">
+            <img src="/assets/skills/bootstrap.svg" alt="BOOTSTRAP">
+            <pre>Bootstrap</pre>
+          </div>
+    
+        </div>
+    
+        <div class="academic-history">
+    
+          <h1>Historia Academica</h1>
+          <h2>Digital House: <pre>Septiembre 2020 - Abril 2021</pre></h2>
+          <h5><a href="/assets/diplomas/dh-full-stack.pdf" target="_blank">Desarrollador web Full Stack</a></h5>
+    
+          <h2>Udemy: <pre>Marzo 2021 - Abril 2021</pre></h2>
+          <h5><a href="/assets/diplomas/angular-udemy.pdf" target="_blank">Angular: de cero a experto</a></h5>
+    
+          <h2>Nuestra señora del refugio: <pre>Diciembre 2007</pre></h2>
+          <h5>Bachillerato</h5>
+    
+        </div>
+    
+        <div class="languages">
+    
+          <h1>Lenguajes</h1>
+          <h5>Español: <pre>Nativo</pre></h5>
+          <h5>Inglés: <pre>Oral: fluido - Escrito: Intermedio</pre></h5>
+    
+        </div>
+    
+      </div>
+    
+      <div class="column2">
+    
+        <div class="professional-experience">
+    
+          <h1>Experiencia profesional</h1>
+          <h3>Desarrollador Full Stack</h3>
+          <h5>IUDÚ - 
+            <small>15/03/2021 - Actualidad</small>
+          </h5>
+          <p>Parte de un equipo de desarrollo bajo metodología scrum. Desarrollamos una aplicación híbrida con el framework de Ionic</p>
+    
+          <h3>Desarrollador Full Stack</h3>
+          <h5>Tu tienda web - 
+            <small>09/09/2021 - 20/04/2021</small>
+          </h5>
+          <p>Maquetador Web:</p>
+          <ul>
+            <li>Planificación y estimación de la página a realizar.</li>
+            <li>Traducción del diseño de una página web a componentes web.</li>
+            <li>Manejo de interacciones del usuario y animaciones de la interfaz.</li>
+            <li>Implementar el desarrollo de buenas prácticas (responsive, UX).</li>
+          </ul>
+          <p>Desarrollador Front End:</p>
+          <ul>
+            <li>Manejo de conexiones asíncronas con Ajax y/o Fetch.</li>
+            <li>Uso de session y cookies para almacenado de información.</li>
+            <li>Implementación de validaciones en JavaScript para formularios.</li>
+            <li>Colaboración con desarrolladores de Back End.</li>
+          </ul>
+          <p>Desarrollador Back End:</p>
+          <ul>
+            <li>Planificación y estimación del desarrollo de servidor web.</li>
+            <li>Creación y puesta en marcha de un servidor Web.</li>
+            <li>Análisis, diseño e implementación n de un sistema de bases de datos</li>
+            <li>Mantenimiento y resolución de errores.</li>
+            <li>Autenticación y manejo de sesiones y usuarios.</li>
+            <li>Manejo de conexiones asíncronas a servicios web.</li>
+            <li>Integración con otras plataformas mediante apis.</li>
+            <li>Uso de sesión y coockies para almacenado de información.</li>
+            <li>Colaboración con los desarrolladores de Front End.</li>
+          </ul>
+    
+    
+        </div>
+    
+      </div>
+    
+      <div class="disponibility">
+        <pre>Disponible: Full Time</pre>
+      </div>
 
     </div>
 
-    <div class="skills">
-
-      <h1>Skills</h1>
-      <img src="/assets/skills/html.png" alt="HTML">
-      <img src="/assets/skills/css.webp" alt="HTML" id="css">
-      <img src="/assets/skills/js.png" alt="JS">
-      <img src="/assets/skills/nodejs.png" alt="JS">
-      <img src="/assets/skills/angular.png" alt="ANGULAR">
-      <img src="/assets/skills/ionic.png" alt="IONIC">
-      <img src="/assets/skills/mysql.png" alt="MY SQL">
-      <img src="/assets/skills/github.png" alt="GITHUB">
-
+    <div *ngSwitchCase="false">
+      
+      <div class="mainInfo">
+        <div class="personal-info">
+          
+          <h1>Tobias Blaksley</h1>
+          <h3>Full Stack Web Developer</h3>
+          <h5>Date of birth: <small>11/05/1990</small></h5>
+          <h5>Argentina, <small>Buenos Aires - Boulogne</small></h5>
+          <h5><i class="pi pi-phone"></i>+54 9 11 6535 3437</h5>
+          <h5><i class="pi pi-envelope"></i>tobias.blaksley@hotmail.com</h5>
+          <h4>Reside in: <small>Buenos Aires, Argentina</small></h4>
+          
+        </div>
+          
+        <h1 class="profileTitle">My online profile:</h1>
+        <div class="linkedin-github">
+          <a href="https://github.com/Totoblak90" target="_blank"><i class="pi pi-github" ></i></a>
+          <a href="https://www.linkedin.com/in/tobias-blaksley-5b883753/" target="_blank">
+            <img src="/assets/LI-Logo.png" alt="LINKEDIN">
+          </a>
+        </div>
+    
+      </div>
+    
+      <div class="column1">
+    
+        <div class="skills">
+    
+          <h1>Skills</h1>
+          <div class="skillsDiv">
+            <img src="/assets/skills/html.png" alt="HTML">
+            <pre>HTML 5</pre>
+          </div>
+          <div class="skillsDiv">
+            <img src="/assets/skills/css.webp" alt="HTML" id="css">
+            <pre>CSS</pre>
+          </div>
+          <div class="skillsDiv">
+            <img src="/assets/skills/js.png" alt="JS">
+            <pre>JavaScript</pre>
+          </div>
+          <div class="skillsDiv">
+            <img src="/assets/skills/nodejs.png" alt="JS">
+            <pre>NodeJS</pre>
+          </div>
+          <div class="skillsDiv">
+            <img src="/assets/skills/angular.png" alt="ANGULAR">
+            <pre>Angular</pre>
+          </div>
+          <div class="skillsDiv">
+            <img src="/assets/skills/react-logo-vector.svg" alt="REACT">
+            <pre>React</pre>
+          </div>
+          <div class="skillsDiv">
+            <img src="/assets/skills/ionic.png" alt="IONIC">
+            <pre>Ionic</pre>
+          </div>
+          <div class="skillsDiv">
+            <img src="/assets/skills/mysql.png" alt="MY SQL">
+            <pre>MySQL</pre>
+          </div>
+          <div class="skillsDiv">
+            <img src="/assets/skills/github.png" alt="GITHUB">
+            <pre>Github</pre>
+          </div>
+          <div class="skillsDiv">
+            <img src="/assets/skills/bootstrap.svg" alt="BOOTSTRAP">
+            <pre>Bootstrap</pre>
+          </div>
+    
+        </div>
+    
+        <div class="academic-history">
+    
+          <h1>Academic History</h1>
+          <h2>Digital House: <pre>September 2020 - April 2021</pre></h2>
+          <h5><a href="/assets/diplomas/dh-full-stack.pdf" target="_blank">Full Stack Web Developer</a></h5>
+    
+          <h2>Udemy: <pre>Marzo 2021 - Abril 2021</pre></h2>
+          <h5><a href="/assets/diplomas/angular-udemy.pdf" target="_blank">Angular: de cero a experto</a></h5>
+    
+          <h2>Nuestra señora del refugio: <pre>December 2007</pre></h2>
+          <h5>Bachillerato</h5>
+    
+        </div>
+    
+        <div class="languages">
+    
+          <h1>Languages</h1>
+          <h5>Spanish: <pre>Native</pre></h5>
+          <h5>English: <pre>Oral: fluid - Writing: Intermediate</pre></h5>
+    
+        </div>
+    
+      </div>
+    
+      <div class="column2">
+    
+        <div class="professional-experience">
+    
+          <h1>Professional experience</h1>
+          <h3>Full Stack developer</h3>
+          <h5>IUDÚ - 
+            <small>15/03/2021 - Now</small>
+          </h5>
+          <p>I'm part of a team of developers that works under the scrum methodology. We are developing an hybrid application under the Ionic framework</p>
+    
+          <h3>Full Stack Web Developer</h3>
+          <h5>Tu tienda web - 
+            <small>09/09/2021 - 20/04/2021</small>
+          </h5>
+          <p>Layout web designer:</p>
+          <ul>
+            <li>Planification and estimation of the ToDo web page</li>
+            <li>Translation of the web page design to web components.</li>
+            <li>Capable of handling user interactions and interfaces animations.</li>
+            <li>Implementation of good practices (responsive, UX).</li>
+          </ul>
+          <p>Front End developer:</p>
+          <ul>
+            <li>Handling asynchronous conections with Ajax and/or Fetch.</li>
+            <li>Use of session and coockies for information storage.</li>
+            <li>Implementation of JavaScript validations for forms.</li>
+            <li>Colaboration with Backend Developers.</li>
+          </ul>
+          <p>Back End Developer:</p>
+          <ul>
+            <li>Planing and estimation of the server development.</li>
+            <li>Creation and start up of the web server.</li>
+            <li>Analysis, design and implementation of a database system.</li>
+            <li>Maintenance and troubleshooting.</li>
+            <li>Authentication and management of sessions and users.</li>
+            <li>Handling asynchronous connections to web services.</li>
+            <li>Integration with other platforms through apis.</li>
+            <li>Use of session and cookies for storing information.</li>
+            <li>Collaboration with Front End Developers.</li>
+          </ul>
+    
+    
+        </div>
+    
+      </div>
+    
+      <div class="disponibility">
+        <pre>Disponible: Full Time</pre>
+      </div>
 
     </div>
 
-    <div class="academic-history">
-
-      <h1>Historia Academica</h1>
-      <h2>Digital House: <pre>Septiembre 2020 - Abril 2021</pre></h2>
-      <h5>Desarrollador Web Full Stack</h5>
-
-      <h2>Udemy: <pre>Marzo 2021 - Abril 2021</pre></h2>
-      <h5><a href="/assets/diplomas/angular-udemy.pdf" target="_blank">Angular: de cero a experto</a></h5>
-
-      <h2>Nuestra señora del refugio: <pre>Diciembre 2007</pre></h2>
-      <h5>Bachillerato</h5>
-
-    </div>
-
-    <div class="languages">
-
-      <h1>Languages</h1>
-      <h5>Español: <pre>Nativo</pre></h5>
-      <h5>Inglés: <pre>Oral: fluido - Escrito: Intermedio</pre></h5>
-
-
-    </div>
-
-  </div>
-
-  <div class="column2">
-
-    <div class="professional-experience">
-
-      <h1>Experiencia profesional</h1>
-      <h3>Desarrollador Full Stack</h3>
-      <h5>IUDÚ - 
-        <small>15/03/2021 - Actualidad</small>
-      </h5>
-      <p>Parte de un equipo de desarrollo bajo metodología scrum. Desarrollamos una aplicación híbrida con el framework de Ionic</p>
-
-      <h3>Desarrollador Full Stack</h3>
-      <h5>Tu tienda web - 
-        <small>09/09/2021 - 20/04/2021</small>
-      </h5>
-      <p>Maquetador Web:</p>
-      <ul>
-        <li>Planificación y estimación de la página a realizar.</li>
-        <li>Traducción del diseño de una página web a componentes web.</li>
-        <li>Manejo de interacciones del usuario y animaciones de la interfaz.</li>
-        <li>Implementar el desarrollo de buenas prácticas (responsive, UX).</li>
-      </ul>
-      <p>Desarrollador Front End:</p>
-      <ul>
-        <li>Manejo de conexiones asíncronas con Ajax y/o Fetch.</li>
-        <li>Uso de session y cookies para almacenado de información.</li>
-        <li>Implementación de validaciones en JavaScript para formularios.</li>
-        <li>Colaboración con desarrolladores de Back End.</li>
-      </ul>
-      <p>Desarrollador Front End:</p>
-      <ul>
-        <li>Planificación y estimación del desarrollo de servidor web.</li>
-        <li>Creación y puesta en marcha de un servidor Web.</li>
-        <li>Análisis, diseño e implementación n de un sistema de bases de datos</li>
-        <li>Mantenimiento y resolución de errores.</li>
-        <li>Autenticación y manejo de sesiones y usuarios.</li>
-        <li>Manejo de conexiones asíncronas a servicios web.</li>
-        <li>Integración con otras plataformas mediante apis.</li>
-        <li>Uso de sesión y coockies para almacenado de información.</li>
-        <li>Colaboración con los desarrolladores de Front End.</li>
-      </ul>
-
-
-    </div>
-
-  </div>
-
-  <div class="disponibility">
-    <pre>Disponible: Part time</pre>
   </div>
 
 </div>

@@ -15,6 +15,7 @@
 .profile-img-container {
     width: 100%;
     display: flex;
+    flex-direction: column;
 }
 .profile-img {
     border-radius: 50%;
@@ -22,10 +23,57 @@
     margin: 50px auto;
     border: 3px solid gray;
 }
+.languageButton {
+    background-color: #1f5a88;
+    border-radius: 10px;
+    width: min-content;
+    margin: auto;
+    color: white;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+/* Personal info */
+.mainInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+.personal-info {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.profileTitle {
+    text-align: center;
+    font-weight: 900;
+    color: #1f5a88;
+}
+.linkedin-github {
+    width: 100%;
+    margin: auto;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+}
+.linkedin-github a {
+    color: inherit;
+    cursor: pointer;
+    align-self: center;
+    margin: 10px;
+}
+.linkedin-github i {
+    font-size: 3rem;
+    text-align: center;
+}
+.linkedin-github img {
+    width: 100px;
+}
 
 /* Column 1 */
 .column1 {
-    width: 50%;
+    width: 100%;
     display: inline-block;
     text-align: center;
 }
@@ -57,37 +105,33 @@
     font-weight: 500;
     margin: 5px;
 }
-.personal-info {
-    margin-bottom: 20px;
-}
-.linkedin-github a {
-    color: inherit;
-}
-.linkedin-github i {
-    font-size: 3rem;
-    margin: 10px;
-}
-.linkedin-github img {
-    width: 10%;
-}
 .skills {
     margin-bottom: 20px;
+}
+.skillsDiv {
+    width: min-content;
+    display: inline-flex;
+    flex-direction: column;
+}
+.skillsDiv pre {
+    display: inline;
 }
 .skills h1 {
     margin-bottom: 15px;
 }
 .skills img {
-    width: 10%;
+    width: 50px;
     border-radius: 50%;
     margin: 5px;
 }
+
 .academic-history a {
     text-decoration: none;
     color: inherit;
 }
 /* Colum 2 */
 .column2 {
-    width: 50%;
+    width: 100%;
     display: inline-block;
     text-align: center;
 }
