@@ -1,20 +1,27 @@
 <div class="main">
 
-  <div class="profile-img-container">
+  <div [ngSwitch]="language" class="switchLanguage">
+    <div #spanishDiv id="html" *ngSwitchCase="true">
 
-    <img src="/assets/profile.jpg" alt="" class="profile-img">
+      <div class="profile-img-container">
 
-    <button
-      (click)="switchLanguage()"
-      class="languageButton"
-    >
-      {{ languageMessage }}
-    </button>
+        <img src="/assets/profile.jpg" alt="" class="profile-img">
+    
+        <button
+          (click)="switchLanguage()"
+          class="languageButton"
+        >
+          {{ languageMessage }}
+        </button>
 
-  </div>
-
-  <div [ngSwitch]="lenguage" class="switchLanguage">
-    <div *ngSwitchCase="true">
+        <button
+          (click)="download(language)"
+          class="languageButton"
+        >
+          Descargar PDF        
+        </button>
+    
+      </div>
       
       <div class="mainInfo">
         <div class="personal-info">
@@ -31,7 +38,9 @@
           
         <h1 class="profileTitle">Mi perfil online:</h1>
         <div class="linkedin-github">
-          <a href="https://github.com/Totoblak90" target="_blank"><i class="pi pi-github" ></i></a>
+          <a href="https://github.com/Totoblak90" target="_blank">
+            <img src="/assets/skills/github.png" alt="GITHUB">
+          </a>
           <a href="https://www.linkedin.com/in/tobias-blaksley-5b883753/" target="_blank">
             <img src="/assets/LI-Logo.png" alt="LINKEDIN">
           </a>
@@ -120,7 +129,8 @@
           <h5>IUDÚ - 
             <small>15/03/2021 - Actualidad</small>
           </h5>
-          <p>Parte de un equipo de desarrollo bajo metodología scrum. Desarrollamos una aplicación híbrida con el framework de Ionic</p>
+          <p>Parte de un equipo de desarrollo bajo metodología scrum. <br> 
+            Desarrollamos una aplicación híbrida con el framework de Ionic</p>
     
           <h3>Desarrollador Full Stack</h3>
           <h5>Tu tienda web - 
@@ -164,7 +174,20 @@
 
     </div>
 
-    <div *ngSwitchCase="false">
+    <div #englishDiv *ngSwitchCase="false">
+
+      <div class="profile-img-container">
+
+        <img src="/assets/profile.jpg" alt="" class="profile-img">
+    
+        <button
+          (click)="switchLanguage()"
+          class="languageButton"
+        >
+          {{ languageMessage }}
+        </button>
+    
+      </div>
       
       <div class="mainInfo">
         <div class="personal-info">
@@ -181,7 +204,9 @@
           
         <h1 class="profileTitle">My online profile:</h1>
         <div class="linkedin-github">
-          <a href="https://github.com/Totoblak90" target="_blank"><i class="pi pi-github" ></i></a>
+          <a href="https://github.com/Totoblak90" target="_blank">
+            <img src="/assets/skills/github.png" alt="GITHUB">
+          </a>
           <a href="https://www.linkedin.com/in/tobias-blaksley-5b883753/" target="_blank">
             <img src="/assets/LI-Logo.png" alt="LINKEDIN">
           </a>
@@ -270,7 +295,8 @@
           <h5>IUDÚ - 
             <small>15/03/2021 - Now</small>
           </h5>
-          <p>I'm part of a team of developers that works under the scrum methodology. We are developing an hybrid application under the Ionic framework</p>
+          <p>I'm part of a team of developers that works under the scrum methodology. <br> 
+            We are developing an hybrid application under the Ionic framework</p>
     
           <h3>Full Stack Web Developer</h3>
           <h5>Tu tienda web - 
@@ -303,13 +329,12 @@
             <li>Collaboration with Front End Developers.</li>
           </ul>
     
-    
         </div>
     
       </div>
     
       <div class="disponibility">
-        <pre>Disponible: Full Time</pre>
+        <pre>Available: Full Time</pre>
       </div>
 
     </div>
