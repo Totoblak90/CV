@@ -1,12 +1,14 @@
 <div class="main">
 
   <div [ngSwitch]="language" class="switchLanguage">
-    <div #spanishDiv id="html" *ngSwitchCase="true">
+    <div *ngSwitchCase="true">
 
       <div class="profile-img-container">
 
         <img src="/assets/profile.jpg" alt="" class="profile-img">
     
+      <div class="buttons">
+        
         <button
           (click)="switchLanguage()"
           class="languageButton"
@@ -14,12 +16,9 @@
           {{ languageMessage }}
         </button>
 
-        <button
-          (click)="download(language)"
-          class="languageButton"
-        >
-          Descargar PDF        
-        </button>
+        <a href="../assets/cvs/CV-spanish.pdf" download class="languageButton">{{ downloadMessage }}</a>
+      
+      </div>
     
       </div>
       
@@ -174,18 +173,25 @@
 
     </div>
 
-    <div #englishDiv *ngSwitchCase="false">
+    <div *ngSwitchCase="false">
 
       <div class="profile-img-container">
 
         <img src="/assets/profile.jpg" alt="" class="profile-img">
     
-        <button
-          (click)="switchLanguage()"
-          class="languageButton"
-        >
-          {{ languageMessage }}
-        </button>
+        <div class="buttons">
+        
+          <button
+            (click)="switchLanguage()"
+            class="languageButton"
+          >
+            {{ languageMessage }}
+          </button>
+  
+          <a href="../assets/cvs/CV-english.pdf" download class="languageButton">{{ downloadMessage }}</a>
+
+        
+        </div>
     
       </div>
       

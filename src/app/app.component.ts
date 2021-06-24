@@ -1,6 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { jsPDF } from "jspdf";
-import * as html2pdf from 'html2pdf.js';
+import { Component, OnInit } from '@angular/core';
 
 
 
@@ -10,9 +8,6 @@ import * as html2pdf from 'html2pdf.js';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  
-  @ViewChild('spanishDiv', {static: false} ) spanishDiv!: ElementRef;
-  @ViewChild('englishDiv', {static: false} ) englishDiv!: ElementRef;
 
 
   title = 'CV';
@@ -40,54 +35,4 @@ export class AppComponent implements OnInit {
     }
   }
 
-  download( language: boolean ) {
-
-    if (language === true) {
-
-
-
-      // const doc = new jsPDF();
-
-      // const specialElementHandlers = {
-      //   '#editor': function (element: any, renderer: any) {
-      //     return true;
-      //   }
-      // };
-
-      const spanishDiv = this.spanishDiv.nativeElement;
-      html2pdf(spanishDiv)
-
-      // doc.html(spanishDiv, {
-      //   callback: function (pdf) {
-      //     var iframe = document.createElement('iframe');
-      //     document.body.appendChild(iframe);
-      //     iframe.src = pdf.output('datauristring');
-      //   }
-      // });
-      // doc.save('Spanish-CV')
-
-    } else {
-
-      const doc = new jsPDF();
-
-      const specialElementHandlers = {
-        '#editor': function (element: any, renderer: any) {
-          return true;
-        }
-      };
-
-      const englishDiv = this.englishDiv.nativeElement;
-
-      doc.html(englishDiv, {
-        callback: function (pdf) {
-          var iframe = document.createElement('iframe');
-          document.body.appendChild(iframe);
-          iframe.src = pdf.output('datauristring');
-        }
-      });
-      doc.save('Spanish-CV')
-
-    }
-
-  }
 }
