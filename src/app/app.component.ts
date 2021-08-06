@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
 
 
   title = 'CV';
-  language: boolean = false;
+  language: boolean = true;
   languageMessage: string = "";
   downloadMessage: string = "";
 

@@ -179,6 +179,11 @@
     font-weight: 500;
     margin: 5px;
 }
+.professional-experience {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
 .professional-experience li {
     list-style: none;
 }
