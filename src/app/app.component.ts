@@ -19,8 +19,8 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit () {
-    this.languageMessage = "Switch Language"
-    this.downloadMessage = "Download as PDF"
+    this.languageMessage = "Cambiar idioma"
+    this.downloadMessage = "Descargar como PDF"
   }
 
   switchLanguage() {
