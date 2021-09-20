@@ -11,27 +11,27 @@ export class AppComponent implements OnInit {
 
 
   title = 'CV';
-  language: boolean = true;
-  languageMessage: string = "";
-  downloadMessage: string = "";
+  language = true;
+  languageMessage = '';
+  downloadMessage = '';
 
   constructor() {
   }
 
-  ngOnInit () {
-    this.languageMessage = "Cambiar idioma"
-    this.downloadMessage = "Descargar como PDF"
+  ngOnInit(): void {
+    this.languageMessage = 'Switch language';
+    this.downloadMessage = 'Descargar como PDF';
   }
 
-  switchLanguage() {
-    this.language = !this.language
+  switchLanguage(): void {
+    this.language = !this.language;
     if (this.language) {
-      this.languageMessage = "Cambiar idioma"
-      this.downloadMessage = "Descargar como PDF"
+      this.languageMessage = 'Switch language';
+      this.downloadMessage = 'Descargar como PDF';
     }
     if (!this.language) {
-      this.languageMessage = "Switch language"
-      this.downloadMessage = "Download as PDF"
+      this.languageMessage = 'Cambiar idioma';
+      this.downloadMessage = 'Download as PDF';
     }
   }
 

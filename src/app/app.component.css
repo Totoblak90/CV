@@ -4,6 +4,7 @@
     margin: auto;
     border: 1px solid #1f5a88;
     border-radius: 10px;
+    padding: 15px;
 }
 
 /* Icons */
@@ -193,7 +194,7 @@
     list-style: none;
     text-align: center;
 }
-@media (max-width: 388px) {
+@media (max-width: 500px) {
     pre {
         font-size: 0.6em;
     }
