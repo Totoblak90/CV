@@ -1,30 +1,18 @@
 <div class="main">
-
   <div [ngSwitch]="language" class="switchLanguage">
     <div *ngSwitchCase="true">
-
       <div class="profile-img-container">
+        <img src="/assets/profile.jpg" alt="" class="profile-img" />
 
-        <img src="/assets/profile.jpg" alt="" class="profile-img">
-    
-      <div class="buttons">
-        
-        <button
-          (click)="switchLanguage()"
-          class="languageButton"
-        >
-          {{ languageMessage }}
-        </button>
+        <div class="buttons">
+          <button (click)="switchLanguage()" class="languageButton">
+            {{ languageMessage }}
+          </button>
+        </div>
+      </div>
 
-        <a href="../assets/cvs/CV-spanish.pdf" download class="languageButton">{{ downloadMessage }}</a>
-      
-      </div>
-    
-      </div>
-      
       <div class="mainInfo">
         <div class="personal-info">
-          
           <h1>Tobias Blaksley</h1>
           <h3>Desarrollador Full Stack</h3>
           <h5>Fecha de nacimento: <small>11/05/1990</small></h5>
@@ -32,147 +20,236 @@
           <h5><i class="pi pi-phone"></i>+54 9 11 6535 3437</h5>
           <h5><i class="pi pi-envelope"></i>tobias.blaksley@hotmail.com</h5>
           <h4>Actualmente en: <small>Buenos Aires, Argentina</small></h4>
-          
         </div>
-          
+
         <h1 class="profileTitle">Mi perfil online:</h1>
         <div class="linkedin-github">
           <a href="https://github.com/Totoblak90" target="_blank">
-            <img src="/assets/skills/github.png" alt="GITHUB">
+            <img src="/assets/skills/github.png" alt="GITHUB" />
           </a>
-          <a href="https://www.linkedin.com/in/tobias-blaksley-5b883753/" target="_blank">
-            <img src="/assets/LI-Logo.png" alt="LINKEDIN">
+          <a
+            href="https://www.linkedin.com/in/tobias-blaksley-5b883753/"
+            target="_blank"
+          >
+            <img src="/assets/LI-Logo.png" alt="LINKEDIN" />
           </a>
         </div>
-    
       </div>
-    
+
       <div class="column1">
-    
         <div class="skills">
-    
           <h1>Skills</h1>
           <div class="skillsDiv">
-            <img src="/assets/skills/html.png" alt="HTML">
+            <img src="/assets/skills/html.png" alt="HTML" />
             <pre>HTML 5</pre>
           </div>
           <div class="skillsDiv">
-            <img src="/assets/skills/css.webp" alt="HTML" id="css">
+            <img src="/assets/skills/css.webp" alt="HTML" id="css" />
             <pre>CSS</pre>
           </div>
           <div class="skillsDiv">
-            <img src="/assets/skills/js.png" alt="JS">
+            <img src="/assets/skills/js.png" alt="JS" />
             <pre>JavaScript</pre>
           </div>
           <div class="skillsDiv">
-            <img src="/assets/skills/nodejs.png" alt="JS">
+            <img src="/assets/skills/nodejs.png" alt="JS" />
             <pre>NodeJS</pre>
           </div>
           <div class="skillsDiv">
-            <img src="/assets/skills/angular.png" alt="ANGULAR">
+            <img src="/assets/skills/angular.png" alt="ANGULAR" />
             <pre>Angular</pre>
           </div>
           <div class="skillsDiv">
-            <img src="/assets/skills/react-logo-vector.svg" alt="REACT">
-            <pre>React</pre>
-          </div>
-          <div class="skillsDiv">
-            <img src="/assets/skills/ionic.png" alt="IONIC">
+            <img src="/assets/skills/ionic.png" alt="IONIC" />
             <pre>Ionic</pre>
           </div>
           <div class="skillsDiv">
-            <img src="/assets/skills/mysql.png" alt="MY SQL">
+            <img src="/assets/skills/rxjs-logo.svg" alt="IONIC" />
+            <pre>RxJS</pre>
+          </div>
+          <div class="skillsDiv">
+            <img src="/assets/skills/mysql.png" alt="MY SQL" />
             <pre>MySQL</pre>
           </div>
           <div class="skillsDiv">
-            <img src="/assets/skills/github.png" alt="GITHUB">
+            <img src="/assets/skills/github.png" alt="GITHUB" />
             <pre>Github</pre>
           </div>
           <div class="skillsDiv">
-            <img src="/assets/skills/bootstrap.svg" alt="BOOTSTRAP">
+            <img src="/assets/skills/bootstrap.svg" alt="BOOTSTRAP" />
             <pre>Bootstrap</pre>
           </div>
-    
         </div>
-    
+
         <div class="academic-history">
-    
           <h1>Historia Academica</h1>
-          <h2>Digital House: <pre>Septiembre 2020 - Abril 2021</pre></h2>
-          <h5><a href="/assets/diplomas/dh-full-stack.pdf" target="_blank">Desarrollador web Full Stack</a></h5>
-    
-          <h2>Udemy: <pre>Marzo 2021 - Abril 2021</pre></h2>
-          <h5><a href="/assets/diplomas/angular-udemy.pdf" target="_blank">Angular: de cero a experto</a></h5>
-    
-          <h2>Nuestra señora del refugio: <pre>Diciembre 2007</pre></h2>
+
+          <h2>
+            Digital House:
+            <pre>Septiembre 2020 - Abril 2021</pre>
+          </h2>
+          <h5>
+            <a href="/assets/diplomas/dh-full-stack.pdf" target="_blank"
+              >Desarrollador web Full Stack</a
+            >
+          </h5>
+
+          <h2>
+            Udemy:
+            <pre>Noviembre 7/2021 - Noviembre 22/2021</pre>
+          </h2>
+          <h5>
+            <a href="/assets/diplomas/angular-avanzado-mean.jpg" target="_blank"
+              >Angular Avanzado: Mean</a
+            >
+          </h5>
+
+          <h2>
+            Udemy:
+            <pre>Marzo 2021 - Abril 2021</pre>
+          </h2>
+          <h5>
+            <a href="/assets/diplomas/angular-udemy.pdf" target="_blank"
+              >Angular: de cero a experto</a
+            >
+          </h5>
+
+          <h2>
+            Nuestra señora del refugio:
+            <pre>Diciembre 2007</pre>
+          </h2>
           <h5>Bachillerato</h5>
-    
         </div>
-    
+
         <div class="languages">
-    
           <h1>Lenguajes</h1>
-          <h5>Español: <pre>Nativo</pre></h5>
-          <h5>Inglés: <pre>Oral: fluido<br>Escrito: Avanzado</pre></h5>
-    
+          <h5>
+            Español:
+            <pre>Nativo</pre>
+          </h5>
+          <h5>
+            Inglés:
+            <pre>Oral: fluido<br>Escrito: Avanzado</pre>
+          </h5>
         </div>
-    
       </div>
-    
+
       <div class="column2">
-    
         <div class="professional-experience">
-          
           <h1>Experiencia profesional</h1>
+
+          <h3>Desarrollador Front End</h3>
+          <h5>
+            DLN Construcciones -
+            <small>10/10/2021 - Actualidad</small> <br>
+            <small>Link al desarrollo: <a href="https://lnconstrucciones.herokuapp.com" target="_blank">https://lnconstrucciones.herokuapp.com</a></small>
+          </h5>
+          <p>
+            Proyecto freelance para una empresa constructora. <br />
+            Es una app web para la gestión de la empresa. La empresa busca tener
+            una página web con un panel de administración para poder gestionar
+            toda la página y la infomración que fluye a través de ella. <br />
+            Desarrollo completo del software, desde el contacto con el cliente
+            hasta el deploy de la app.
+          </p>
+
+          <ul>
+            Lenguajes:
+            <li>Typescript, Html, Css</li>
+          </ul>
+          <br />
+          <ul>
+            Frameworks:
+            <li>Angular</li>
+          </ul>
+          <br />
+          <ul>
+            Tareas:
+            <li>Manejo del cliente.</li>
+            <li>Armado de wireframes.</li>
+            <li>Maquetado, CSS y Bootsrtap.</li>
+            <li>Manejo de funcionalidad completa de la app con Angular.</li>
+          </ul>
+          <br>
           <h3>Desarrollador Full Stack</h3>
-          <h5>IUDÚ - 
+          <h5>
+            IUDÚ -
             <small>15/03/2021 - Actualidad</small>
           </h5>
-          <p>Como desarrollador Front-End participo en un equipo que brinda servicios a las diferentes tribus de la compañía <br>
-            Desarrollo de aplicaciones con Ionic & Angular para Web, Android e IOS.</p>
-            
-            <ul>Lenguajes:
-              <li>Javascript, Typescript.</li>
-            </ul>
-            <br>
-            <ul>Frameworks:
-              <li>Ionic & Angular</li>
-            </ul>
-            <br>
-            <ul>Tareas:
-              <li>Desarrollo e implementación de diferentes secciones de la aplicación.</li>
-              <li>Mantenimiento, debugging, actualización y fix de la aplicación.</li>
-              <li>Creación de los servicios para comunicarse con el backend.</li>
-              <li>Desarrollo completo de componentes con funcionalidad específica para el uso en la aplización.</li>
-              <li>Coordinación con los desarrolladores de back-end para la implementación de servicios y features de la app.<li>
-              <li>Manejo completo de Ionic & Angular CLI.</li>
-              <li>Desarrollo con las tecnologías de Cordova & Capacitor.</li>
-              <li>Estimación y analisis de las tareas a realizar.</li>
-            </ul>
-            <br>
+          <p>
+            Como desarrollador Front-End participo en un equipo que brinda
+            servicios a las diferentes tribus de la compañía <br />
+            Desarrollo de aplicaciones con Ionic & Angular para Web, Android e
+            IOS.
+          </p>
+
+          <ul>
+            Lenguajes:
+            <li>Javascript, Typescript.</li>
+          </ul>
+          <br />
+          <ul>
+            Frameworks:
+            <li>Ionic & Angular</li>
+          </ul>
+          <br />
+          <ul>
+            Tareas:
+            <li>
+              Desarrollo e implementación de diferentes secciones de la
+              aplicación.
+            </li>
+            <li>
+              Mantenimiento, debugging, actualización y fix de la aplicación.
+            </li>
+            <li>Creación de los servicios para comunicarse con el backend.</li>
+            <li>
+              Desarrollo completo de componentes con funcionalidad específica
+              para el uso en la aplización.
+            </li>
+            <li>
+              Coordinación con los desarrolladores de back-end para la
+              implementación de servicios y features de la app.
+            </li>
+            <li></li>
+            <li>Manejo completo de Ionic & Angular CLI.</li>
+            <li>Desarrollo con las tecnologías de Cordova & Capacitor.</li>
+            <li>Estimación y analisis de las tareas a realizar.</li>
+          </ul>
+          <br />
           <h3>Desarrollador Full Stack</h3>
-          <h5>Tu tienda web - 
+          <h5>
+            Tu tienda web -
             <small>09/09/2021 - 20/04/2021</small>
           </h5>
           <p>Maquetador Web:</p>
           <ul>
             <li>Planificación y estimación de la página a realizar.</li>
             <li>Traducción del diseño de una página web a componentes web.</li>
-            <li>Manejo de interacciones del usuario y animaciones de la interfaz.</li>
-            <li>Implementar el desarrollo de buenas prácticas (responsive, UX).</li>
+            <li>
+              Manejo de interacciones del usuario y animaciones de la interfaz.
+            </li>
+            <li>
+              Implementar el desarrollo de buenas prácticas (responsive, UX).
+            </li>
           </ul>
           <p>Desarrollador Front End:</p>
           <ul>
             <li>Manejo de conexiones asíncronas con Ajax y/o Fetch.</li>
             <li>Uso de session y cookies para almacenado de información.</li>
-            <li>Implementación de validaciones en JavaScript para formularios.</li>
+            <li>
+              Implementación de validaciones en JavaScript para formularios.
+            </li>
             <li>Colaboración con desarrolladores de Back End.</li>
           </ul>
           <p>Desarrollador Back End:</p>
           <ul>
             <li>Planificación y estimación del desarrollo de servidor web.</li>
             <li>Creación y puesta en marcha de un servidor Web.</li>
-            <li>Análisis, diseño e implementación n de un sistema de bases de datos</li>
+            <li>
+              Análisis, diseño e implementación n de un sistema de bases de
+              datos
+            </li>
             <li>Mantenimiento y resolución de errores.</li>
             <li>Autenticación y manejo de sesiones y usuarios.</li>
             <li>Manejo de conexiones asíncronas a servicios web.</li>
@@ -180,39 +257,23 @@
             <li>Uso de sesión y coockies para almacenado de información.</li>
             <li>Colaboración con los desarrolladores de Front End.</li>
           </ul>
-    
-    
         </div>
-    
       </div>
-
     </div>
 
     <div *ngSwitchCase="false">
-
       <div class="profile-img-container">
+        <img src="/assets/profile.jpg" alt="" class="profile-img" />
 
-        <img src="/assets/profile.jpg" alt="" class="profile-img">
-    
         <div class="buttons">
-        
-          <button
-            (click)="switchLanguage()"
-            class="languageButton"
-          >
+          <button (click)="switchLanguage()" class="languageButton">
             {{ languageMessage }}
           </button>
-  
-          <a href="../assets/cvs/CV-english.pdf" download class="languageButton">{{ downloadMessage }}</a>
-
-        
         </div>
-    
       </div>
-      
+
       <div class="mainInfo">
         <div class="personal-info">
-          
           <h1>Tobias Blaksley</h1>
           <h3>Full Stack Web Developer</h3>
           <h5>Date of birth: <small>11/05/1990</small></h5>
@@ -220,132 +281,210 @@
           <h5><i class="pi pi-phone"></i>+54 9 11 6535 3437</h5>
           <h5><i class="pi pi-envelope"></i>tobias.blaksley@hotmail.com</h5>
           <h4>Reside in: <small>Buenos Aires, Argentina</small></h4>
-          
         </div>
-          
+
         <h1 class="profileTitle">My online profile:</h1>
         <div class="linkedin-github">
           <a href="https://github.com/Totoblak90" target="_blank">
-            <img src="/assets/skills/github.png" alt="GITHUB">
+            <img src="/assets/skills/github.png" alt="GITHUB" />
           </a>
-          <a href="https://www.linkedin.com/in/tobias-blaksley-5b883753/" target="_blank">
-            <img src="/assets/LI-Logo.png" alt="LINKEDIN">
+          <a
+            href="https://www.linkedin.com/in/tobias-blaksley-5b883753/"
+            target="_blank"
+          >
+            <img src="/assets/LI-Logo.png" alt="LINKEDIN" />
           </a>
         </div>
-    
       </div>
-    
+
       <div class="column1">
-    
         <div class="skills">
-    
           <h1>Skills</h1>
           <div class="skillsDiv">
-            <img src="/assets/skills/html.png" alt="HTML">
+            <img src="/assets/skills/html.png" alt="HTML" />
             <pre>HTML 5</pre>
           </div>
           <div class="skillsDiv">
-            <img src="/assets/skills/css.webp" alt="HTML" id="css">
+            <img src="/assets/skills/css.webp" alt="HTML" id="css" />
             <pre>CSS</pre>
           </div>
           <div class="skillsDiv">
-            <img src="/assets/skills/js.png" alt="JS">
+            <img src="/assets/skills/js.png" alt="JS" />
             <pre>JavaScript</pre>
           </div>
           <div class="skillsDiv">
-            <img src="/assets/skills/nodejs.png" alt="JS">
+            <img src="/assets/skills/nodejs.png" alt="JS" />
             <pre>NodeJS</pre>
           </div>
           <div class="skillsDiv">
-            <img src="/assets/skills/angular.png" alt="ANGULAR">
+            <img src="/assets/skills/angular.png" alt="ANGULAR" />
             <pre>Angular</pre>
           </div>
           <div class="skillsDiv">
-            <img src="/assets/skills/react-logo-vector.svg" alt="REACT">
-            <pre>React</pre>
-          </div>
-          <div class="skillsDiv">
-            <img src="/assets/skills/ionic.png" alt="IONIC">
+            <img src="/assets/skills/ionic.png" alt="IONIC" />
             <pre>Ionic</pre>
           </div>
           <div class="skillsDiv">
-            <img src="/assets/skills/mysql.png" alt="MY SQL">
+            <img src="/assets/skills/rxjs-logo.svg" alt="IONIC" />
+            <pre>RxJS</pre>
+          </div>
+          <div class="skillsDiv">
+            <img src="/assets/skills/mysql.png" alt="MY SQL" />
             <pre>MySQL</pre>
           </div>
           <div class="skillsDiv">
-            <img src="/assets/skills/github.png" alt="GITHUB">
+            <img src="/assets/skills/github.png" alt="GITHUB" />
             <pre>Github</pre>
           </div>
           <div class="skillsDiv">
-            <img src="/assets/skills/bootstrap.svg" alt="BOOTSTRAP">
+            <img src="/assets/skills/bootstrap.svg" alt="BOOTSTRAP" />
             <pre>Bootstrap</pre>
           </div>
-    
         </div>
-    
+
         <div class="academic-history">
-    
           <h1>Academic History</h1>
-          <h2>Digital House: <pre>September 2020 - April 2021</pre></h2>
-          <h5><a href="/assets/diplomas/dh-full-stack.pdf" target="_blank">Full Stack Web Developer</a></h5>
-    
-          <h2>Udemy: <pre>Marzo 2021 - Abril 2021</pre></h2>
-          <h5><a href="/assets/diplomas/angular-udemy.pdf" target="_blank">Angular: de cero a experto</a></h5>
-    
-          <h2>Nuestra señora del refugio: <pre>December 2007</pre></h2>
+          <h2>
+            Digital House:
+            <pre>September 2020 - April 2021</pre>
+          </h2>
+          <h5>
+            <a href="/assets/diplomas/dh-full-stack.pdf" target="_blank"
+              >Full Stack Web Developer</a
+            >
+          </h5>
+
+          <h2>
+            Udemy:
+            <pre>November 7/2021 - November 22/2021</pre>
+          </h2>
+          <h5>
+            <a href="/assets/diplomas/angular-avanzado-mean.jpg" target="_blank"
+              >Angular Avanzado: Mean</a
+            >
+          </h5>
+
+          <h2>
+            Udemy:
+            <pre>Marzo 2021 - Abril 2021</pre>
+          </h2>
+          <h5>
+            <a href="/assets/diplomas/angular-udemy.pdf" target="_blank"
+              >Angular: de cero a experto</a
+            >
+          </h5>
+
+          <h2>
+            Nuestra señora del refugio:
+            <pre>December 2007</pre>
+          </h2>
           <h5>Bachillerato</h5>
-    
         </div>
-    
+
         <div class="languages">
-    
           <h1>Languages</h1>
-          <h5>Spanish: <pre>Native</pre></h5>
-          <h5>English: <pre>Oral: fluid<br>Writing: Advanced</pre></h5>
-    
+          <h5>
+            Spanish:
+            <pre>Native</pre>
+          </h5>
+          <h5>
+            English:
+            <pre>Oral: fluid<br>Writing: Advanced</pre>
+          </h5>
         </div>
-    
       </div>
-    
+
       <div class="column2">
-    
         <div class="professional-experience">
-    
           <h1>Professional experience</h1>
+
+          <h3>Front end developer</h3>
+          <h5>
+            DLN Construcciones -
+            <small>10/10/2021 - Now</small> <br>
+            <small>Link to the development: <a href="https://lnconstrucciones.herokuapp.com" target="_blank">https://lnconstrucciones.herokuapp.com</a></small>
+          </h5>
+          <p>
+            Freelance proyect for a construction company. <br />
+            Web application for the company management. The company seeks out to
+            have a web page with an administration panel for it to manage the
+            hole web page and the info that flows through it. <br />
+            Full development of the web app, from the contact of the client to
+            deploy.
+          </p>
+
+          <ul>
+            Languajes:
+            <li>Typescript, Html, Css</li>
+          </ul>
+          <br />
+          <ul>
+            Frameworks:
+            <li>Angular</li>
+          </ul>
+          <br />
+          <ul>
+            Tasks:
+            <li>Client management.</li>
+            <li>Wireframes.</li>
+            <li>HTML, CSS y Bootsrtap.</li>
+            <li>Development of the app functionality with Angular.</li>
+          </ul>
+          <br>
+
           <h3>Full Stack developer</h3>
-          <h5>IUDÚ - 
+          <h5>
+            IUDÚ -
             <small>15/03/2021 - Now</small>
           </h5>
-          <p>As a front-end developer I participate of a team that gives service to the different tribes of the company. <br>
-            I've been developing web and mobile applications with Ionic and Angular for Android and IOS.</p>
-            <ul>Languages:
-              <li>Javascript, Typescript.</li>
-            </ul>
-            <br>
-            <ul>Frameworks:
-              <li>Ionic & Angular</li>
-            </ul>
-            <br>
-            <ul>Tasks:
-              <li>Development and implementation of different features for the application.</li>
-              <li>Mantaining the application, debugging and fixing.</li>
-              <li>Creation of services to communicate with the back-end.</li>
-              <li>Full component development for general usage on the application.</li>
-              <li>Coordination with back-end developers for features and services implementations.</li>
-              <li>Full management of Angular and Ionic CLI.</li>
-              <li>Development with Cordova & Capacitor.</li>
-              <li>Task estimations and feature proposition.</li>
-            </ul>
-          <br>
+          <p>
+            As a front-end developer I participate of a team that gives service
+            to the different tribes of the company. <br />
+            I've been developing web and mobile applications with Ionic and
+            Angular for Android and IOS.
+          </p>
+          <ul>
+            Languages:
+            <li>Javascript, Typescript.</li>
+          </ul>
+          <br />
+          <ul>
+            Frameworks:
+            <li>Ionic & Angular</li>
+          </ul>
+          <br />
+          <ul>
+            Tasks:
+            <li>
+              Development and implementation of different features for the
+              application.
+            </li>
+            <li>Mantaining the application, debugging and fixing.</li>
+            <li>Creation of services to communicate with the back-end.</li>
+            <li>
+              Full component development for general usage on the application.
+            </li>
+            <li>
+              Coordination with back-end developers for features and services
+              implementations.
+            </li>
+            <li>Full management of Angular and Ionic CLI.</li>
+            <li>Development with Cordova & Capacitor.</li>
+            <li>Task estimations and feature proposition.</li>
+          </ul>
+          <br />
           <h3>Full Stack Web Developer</h3>
-          <h5>Tu tienda web - 
+          <h5>
+            Tu tienda web -
             <small>09/09/2021 - 20/04/2021</small>
           </h5>
           <p>Layout web designer:</p>
           <ul>
             <li>Planification and estimation of the ToDo web page</li>
             <li>Translation of the web page design to web components.</li>
-            <li>Capable of handling user interactions and interfaces animations.</li>
+            <li>
+              Capable of handling user interactions and interfaces animations.
+            </li>
             <li>Implementation of good practices (responsive, UX).</li>
           </ul>
           <p>Front End developer:</p>
@@ -367,13 +506,8 @@
             <li>Use of session and cookies for storing information.</li>
             <li>Collaboration with Front End Developers.</li>
           </ul>
-    
         </div>
-    
       </div>
-
     </div>
-
   </div>
-
 </div>

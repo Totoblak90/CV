@@ -10,28 +10,24 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
 
 
-  title = 'CV';
-  language = true;
-  languageMessage = '';
-  downloadMessage = '';
+  public title: string = 'CV';
+  public language: boolean = true;
+  public languageMessage: string = '';
 
   constructor() {
   }
 
   ngOnInit(): void {
     this.languageMessage = 'Switch language';
-    this.downloadMessage = 'Descargar como PDF';
   }
 
-  switchLanguage(): void {
+  public switchLanguage(): void {
     this.language = !this.language;
     if (this.language) {
       this.languageMessage = 'Switch language';
-      this.downloadMessage = 'Descargar como PDF';
     }
     if (!this.language) {
       this.languageMessage = 'Cambiar idioma';
-      this.downloadMessage = 'Download as PDF';
     }
   }
 
